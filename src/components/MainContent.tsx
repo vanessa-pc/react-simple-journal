@@ -1,11 +1,25 @@
-import FixedEntry from "./FixedEntry";
+// import FixedEntry from "./FixedEntry";
 import JournalEntry from "./JournalEntry";
 
 function MainContent(): JSX.Element {
   return (
     <main>
-      <FixedEntry />
-      <FixedEntry />
+      <JournalEntry
+      title = {"Another example of using reusable react components"}
+      tags = {["web dev", "react"]}
+      body={"This is another journal entry using a reusable react component"}
+      views = {1}
+      likes={1}
+      postDate={{month: "August", day: 11, year: 2021}}
+      />
+      <JournalEntry
+      title = {"Another example of using reusable react components"}
+      tags = {["web dev", "react"]}
+      body={"This is yet another journal entry using a reusable react component"}
+      views = {3}
+      likes={5}
+      postDate={{month: "August", day: 11, year: 2021}}
+      />
       <JournalEntry
         title={"Discovering React components"}
         tags={["react", "components", "reusability"]}
